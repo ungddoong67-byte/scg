@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>🚚 서초구퀵서비스 차량별 맞춤 배송</h3>
+          <p>방배동 양재동 우면동 원지동 잠원동 반포동 서초동 내곡동 염곡동 신원동 반포본동 방배본동 서초 남부터미널 남부고속버스 강남터미널 강남고속버스 법원 교대역 서초역 교대 서래마을 양재대로 반포대로 서초대로 신반포로 서초중앙로 반포 서초구 전지역</p>
             <ul>
                 <li>🏍️ 서초구오토바이퀵 : 기동성을 바탕으로 한 소화물 급송 서비스</li>
                 <li>🚙 서초구다마스퀵 : 소규모 이삿짐 및 가전/가구 안전한 퀵서비스</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+    <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
